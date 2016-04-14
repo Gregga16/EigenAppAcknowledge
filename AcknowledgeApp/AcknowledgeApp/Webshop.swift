@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Webshop: UIViewController {
+class Webshop: UIViewController{
 
     @IBOutlet weak var WebViewWebshop: UIWebView!
     
@@ -18,7 +18,7 @@ class Webshop: UIViewController {
         let url = NSURL(string: "https://shop.acknowledge.nl")!
         
         WebViewWebshop.loadRequest(NSURLRequest(URL: url))
-        WebViewWebshop.scalesPageToFit = true
+        
 
         // Do any additional setup after loading the view.
     }

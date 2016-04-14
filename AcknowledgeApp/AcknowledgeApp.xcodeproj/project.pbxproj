@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F56350041CBF82C400D6B4F7 /* ViewDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56350031CBF82C400D6B4F7 /* ViewDocument.swift */; };
 		F5C14FFA1CBE8D5200283389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C14FF91CBE8D5200283389 /* AppDelegate.swift */; };
 		F5C14FFC1CBE8D5200283389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C14FFB1CBE8D5200283389 /* ViewController.swift */; };
 		F5C14FFF1CBE8D5200283389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C14FFD1CBE8D5200283389 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F56350031CBF82C400D6B4F7 /* ViewDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDocument.swift; sourceTree = "<group>"; };
 		F5C14FF61CBE8D5100283389 /* AcknowledgeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcknowledgeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C14FF91CBE8D5200283389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5C14FFB1CBE8D5200283389 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				F5C150321CBEC56600283389 /* Youtube.swift */,
 				F5C150341CBECAB700283389 /* Document.swift */,
 				F5C150361CBECC1F00283389 /* DocumentTableView.swift */,
+				F56350031CBF82C400D6B4F7 /* ViewDocument.swift */,
 			);
 			path = AcknowledgeApp;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				F5C150371CBECC1F00283389 /* DocumentTableView.swift in Sources */,
 				F5C150311CBEC54E00283389 /* Webshop.swift in Sources */,
 				F5C150351CBECAB700283389 /* Document.swift in Sources */,
+				F56350041CBF82C400D6B4F7 /* ViewDocument.swift in Sources */,
 				F5C14FFA1CBE8D5200283389 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +513,7 @@
 				F5C150231CBE8D5200283389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5C150241CBE8D5200283389 /* Build configuration list for PBXNativeTarget "AcknowledgeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +522,7 @@
 				F5C150261CBE8D5200283389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5C150271CBE8D5200283389 /* Build configuration list for PBXNativeTarget "AcknowledgeAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +531,7 @@
 				F5C150291CBE8D5200283389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

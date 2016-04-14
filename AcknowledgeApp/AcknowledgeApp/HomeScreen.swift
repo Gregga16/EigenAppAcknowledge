@@ -15,12 +15,7 @@ class HomeScreen: UIViewController {
         super.viewDidLoad()
         
         let url = NSURL(string: "https://www.youtube.com/embed/KacxpZnRvCY")!
-        let width = 360
-        let height = 150
-        let frame = 0
-        let Code :NSString = "<iframe width=\(width) height=\(height) src=\(url) frameborder=\(frame) allowfullscreen></iframe>";
-        
-        WebViewVideo.loadHTMLString(Code as String, baseURL: nil)
+        WebViewVideo.loadRequest(NSURLRequest(URL: url))
 
         // Do any additional setup after loading the view.
     }

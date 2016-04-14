@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Youtube: UIViewController {
+class Youtube: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var WebViewYouTube: UIWebView!
     
@@ -18,8 +18,6 @@ class Youtube: UIViewController {
         let url = NSURL(string: "https://www.youtube.com/user/AcknowledgeChannel")!
         
         WebViewYouTube.loadRequest(NSURLRequest(URL: url))
-        WebViewYouTube.scalesPageToFit = true;
-
         // Do any additional setup after loading the view.
     }
 
