@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewDocument: UIViewController, UIWebViewDelegate {
+class ViewDocument: UIViewController {
     @IBOutlet weak var WebViewFile: UIWebView!
     
     var detailItem: String! {
@@ -27,13 +27,10 @@ class ViewDocument: UIViewController, UIWebViewDelegate {
                 let URL = NSURL(string: detail)
                 //let URL = NSURL(string: "file://".stringByAppendingString(detail))
                 webview.loadRequest(NSURLRequest(URL: URL!))
-                
-                
-                //let url = NSURL(string: "http://athena.fhict.nl/users/i254909/iOS/files/Presentatie%20Acknowledge%20Infrastructuur%20Performance%20Scan%20v1_1.pptx")
-                //webview.loadRequest(NSURLRequest(URL: url!))
             }
         }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,17 +42,5 @@ class ViewDocument: UIViewController, UIWebViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func webViewDidStartLoad(webView: UIWebView){
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-    }
-    
-    func webViewDidFinishLoad(webView: UIWebView){
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-    }
-    
-    func webView(webView: UIWebView, didFailLoadWithError error: NSError?){
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
     }
 }
