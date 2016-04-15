@@ -119,11 +119,12 @@ class DocumentTableView: UITableViewController {
                 // Success
                 
                 let statusCode = (response as! NSHTTPURLResponse).statusCode
-                print("Success: \(statusCode)")
+                print("Success file download: \(statusCode)")
                 
                 // This is your file-variable:
                 // data
                 let documents_path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+                print(documents_path)
                 let indexPaths = self.tableView.indexPathForSelectedRow
                 let title = self.objectArray[indexPaths!.section].sectionObjects[indexPaths!.row].title!
                 let type = self.objectArray[indexPaths!.section].sectionObjects[indexPaths!.row].type!
