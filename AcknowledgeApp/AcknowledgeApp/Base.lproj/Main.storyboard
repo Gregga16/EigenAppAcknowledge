@@ -18,94 +18,116 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwE-Dj-QFC" userLabel="Shop">
-                                <rect key="frame" x="20" y="295" width="80" height="65"/>
-                                <state key="normal" image="Shopping Cart Loaded Filled-100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Acknowledge achtergrond" translatesAutoresizingMaskIntoConstraints="NO" id="1bc-zY-kMv">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3a-gQ-F8Y" userLabel="Kalender">
+                                <rect key="frame" x="116" y="500" width="80" height="50"/>
+                                <state key="normal" image="Calendar-75">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="eyb-tY-QKz" kind="push" id="TaS-ZT-vb6"/>
+                                    <segue destination="AKF-rq-VKH" kind="push" id="QtJ-tt-4Vz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rS-mw-2Tl" userLabel="Calendar">
-                                <rect key="frame" x="128" y="293" width="64" height="66"/>
-                                <state key="normal" image="Calendar 17 Filled-100"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66v-tB-Hod" userLabel="Webshop">
+                                <rect key="frame" x="220" y="500" width="80" height="50"/>
+                                <state key="normal" image="Shopping-75">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="AKF-rq-VKH" kind="push" id="Xvz-Iz-esk"/>
+                                    <segue destination="eyb-tY-QKz" kind="push" id="zSi-ky-lmS"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gyA-M1-wwE">
-                                <rect key="frame" x="0.0" y="125" width="320" height="187"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Py4-AJ-Zsu" userLabel="Presentatie">
+                                <rect key="frame" x="20" y="500" width="80" height="50"/>
+                                <state key="normal" image="Document-75">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="Document Filled-50"/>
+                                <connections>
+                                    <segue destination="ozi-O0-vL6" kind="push" id="8Rj-Jz-P93"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iab-pf-1HE">
+                                <rect key="frame" x="0.0" y="120" width="320" height="213"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPx-O0-a2x">
-                                <rect key="frame" x="55" y="366" width="54" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="54" id="Voi-lN-Ewa"/>
-                                    <constraint firstAttribute="height" constant="21" id="qeo-mJ-Rx4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Presentaties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tB-eb-FMx">
+                                <rect key="frame" x="20" y="555" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Kalender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3k-42-IOe">
-                                <rect key="frame" x="156" y="368" width="85" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="7yB-wI-7fe"/>
-                                    <constraint firstAttribute="width" constant="85" id="wtJ-6z-5Q5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Kalender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iz5-fj-z5C">
+                                <rect key="frame" x="126" y="555" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Document" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUA-tB-UXG">
-                                <rect key="frame" x="219" y="372" width="85" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Kic-7B-Xfq"/>
-                                    <constraint firstAttribute="width" constant="85" id="SGT-V0-ANd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Webshop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYy-ri-Q4Y">
+                                <rect key="frame" x="227" y="555" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="OverOns" translatesAutoresizingMaskIntoConstraints="NO" id="rsO-EA-C6z">
-                                <rect key="frame" x="0.0" y="407" width="320" height="161"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DF9-5E-Zv2" userLabel="Document">
-                                <rect key="frame" x="214" y="295" width="80" height="74"/>
-                                <state key="normal" image="Document Filled-100"/>
-                                <connections>
-                                    <segue destination="ozi-O0-vL6" kind="push" id="RvE-9N-tDi"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="AcknowledgeHeader" translatesAutoresizingMaskIntoConstraints="NO" id="YnZ-0S-Sfj">
-                                <rect key="frame" x="35" y="64" width="235" height="61"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welkom bij Acknowledge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0Y-hT-azi">
+                                <rect key="frame" x="8" y="76" width="312" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="EEN ICT ORGANISATIE MET FOCUS OP INNOVATIE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lA9-1d-vtb">
+                                <rect key="frame" x="5" y="341" width="310" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liz-PJ-hrf">
+                                <rect key="frame" x="9" y="364" width="302" height="99"/>
+                                <string key="text">Het is belangrijk om duidelijk in het vizier te hebben wat je als organisatie wilt bereiken. Wat is jouw stip op de horizon? En hoe draagt ICT bij om dit doel sneller te bereiken? 
+
+Het is onze passie om organisaties doeltreffender te maken. We doen dit door inzet van de juiste innovaties, het inrichten van de juiste processen voor een optimale klantbeleving en het inzetten van doeltreffende ICT dienstverlening als fundering voor een groeiende organisatie.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="gyA-M1-wwE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="1Pf-FX-Ryh"/>
-                            <constraint firstItem="bwE-Dj-QFC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1ez-nR-ung"/>
-                            <constraint firstItem="bwE-Dj-QFC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="43.5" id="7a3-1l-hXx"/>
-                            <constraint firstItem="rsO-EA-C6z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ChD-TJ-X88"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rsO-EA-C6z" secondAttribute="bottom" id="EBG-NU-phz"/>
-                            <constraint firstItem="DF9-5E-Zv2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="48" id="IrL-AO-pm0"/>
-                            <constraint firstItem="gyA-M1-wwE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="LUV-79-QmP"/>
-                            <constraint firstItem="rsO-EA-C6z" firstAttribute="top" secondItem="WUA-tB-UXG" secondAttribute="bottom" constant="14" id="LVn-6o-pQ5"/>
-                            <constraint firstItem="DF9-5E-Zv2" firstAttribute="leading" secondItem="8rS-mw-2Tl" secondAttribute="trailing" constant="22" id="LYI-mp-BaV"/>
-                            <constraint firstItem="8rS-mw-2Tl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="42.5" id="MRr-Lk-4B6"/>
-                            <constraint firstItem="nPx-O0-a2x" firstAttribute="top" secondItem="bwE-Dj-QFC" secondAttribute="bottom" constant="6" id="Mmn-n3-W60"/>
-                            <constraint firstItem="gyA-M1-wwE" firstAttribute="top" secondItem="YnZ-0S-Sfj" secondAttribute="bottom" id="NtQ-gW-MOd"/>
-                            <constraint firstItem="WUA-tB-UXG" firstAttribute="top" secondItem="DF9-5E-Zv2" secondAttribute="bottom" constant="3" id="Xe6-KD-Zsa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WUA-tB-UXG" secondAttribute="trailing" constant="-4" id="XvF-a7-8ys"/>
-                            <constraint firstItem="R3k-42-IOe" firstAttribute="top" secondItem="8rS-mw-2Tl" secondAttribute="bottom" constant="9" id="ehF-WH-172"/>
-                            <constraint firstItem="YnZ-0S-Sfj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="nuJ-Td-pI5"/>
-                            <constraint firstItem="8rS-mw-2Tl" firstAttribute="leading" secondItem="bwE-Dj-QFC" secondAttribute="trailing" constant="28" id="vf5-Bl-ibK"/>
-                            <constraint firstItem="YnZ-0S-Sfj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="xTK-PL-zD6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="YnZ-0S-Sfj" secondAttribute="trailing" constant="30" id="zbV-7L-zrI"/>
+                            <constraint firstItem="1bc-zY-kMv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3dg-aL-qeg"/>
+                            <constraint firstItem="O0Y-hT-azi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="43H-fm-e7P"/>
+                            <constraint firstItem="vYy-ri-Q4Y" firstAttribute="top" secondItem="66v-tB-Hod" secondAttribute="bottom" constant="5" id="6Xd-Cd-PaJ"/>
+                            <constraint firstItem="iab-pf-1HE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="8te-0Q-vXf"/>
+                            <constraint firstItem="Py4-AJ-Zsu" firstAttribute="top" secondItem="liz-PJ-hrf" secondAttribute="bottom" constant="37" id="D3T-jw-Aju"/>
+                            <constraint firstItem="O0Y-hT-azi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="4" id="G8N-kc-UMf"/>
+                            <constraint firstItem="liz-PJ-hrf" firstAttribute="top" secondItem="lA9-1d-vtb" secondAttribute="bottom" constant="2" id="Han-6P-Cx9"/>
+                            <constraint firstItem="liz-PJ-hrf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JHu-4m-V6I"/>
+                            <constraint firstItem="Py4-AJ-Zsu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Mti-Fd-PP2"/>
+                            <constraint firstItem="8tB-eb-FMx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NnZ-5l-VFU"/>
+                            <constraint firstItem="Z3a-gQ-F8Y" firstAttribute="leading" secondItem="Py4-AJ-Zsu" secondAttribute="trailing" constant="16" id="Rkv-Ch-viU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="liz-PJ-hrf" secondAttribute="trailing" constant="-11" id="SKJ-ZW-Jy2"/>
+                            <constraint firstItem="Iz5-fj-z5C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WUT-ef-vJf"/>
+                            <constraint firstItem="liz-PJ-hrf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-11" id="Xdp-2q-Ph8"/>
+                            <constraint firstItem="66v-tB-Hod" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ygx-He-H53"/>
+                            <constraint firstItem="66v-tB-Hod" firstAttribute="top" secondItem="liz-PJ-hrf" secondAttribute="bottom" constant="37" id="aa3-c8-G5P"/>
+                            <constraint firstItem="8tB-eb-FMx" firstAttribute="top" secondItem="Py4-AJ-Zsu" secondAttribute="bottom" constant="5" id="c7c-ht-M8E"/>
+                            <constraint firstItem="1bc-zY-kMv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="32" id="dxP-rF-RwB"/>
+                            <constraint firstItem="Z3a-gQ-F8Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-4" id="f3U-DB-BU6"/>
+                            <constraint firstItem="1bc-zY-kMv" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="gpg-Va-SE6"/>
+                            <constraint firstItem="vYy-ri-Q4Y" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="i5b-Lq-cKQ"/>
+                            <constraint firstItem="lA9-1d-vtb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n56-bG-tPh"/>
+                            <constraint firstItem="66v-tB-Hod" firstAttribute="leading" secondItem="Z3a-gQ-F8Y" secondAttribute="trailing" constant="24" id="r1L-Gg-jJR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="liz-PJ-hrf" secondAttribute="trailing" constant="-11" id="uUe-Ga-Fcd"/>
+                            <constraint firstItem="Iz5-fj-z5C" firstAttribute="top" secondItem="Z3a-gQ-F8Y" secondAttribute="bottom" constant="5" id="vCv-on-7Hv"/>
+                            <constraint firstItem="1bc-zY-kMv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-64" id="vkr-wB-esM"/>
+                            <constraint firstItem="Z3a-gQ-F8Y" firstAttribute="top" secondItem="liz-PJ-hrf" secondAttribute="bottom" constant="37" id="wtn-OL-9lU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="raa-yy-xhj"/>
                     <connections>
-                        <outlet property="WebViewVideo" destination="gyA-M1-wwE" id="668-le-e4j"/>
+                        <outlet property="WebViewVideo" destination="iab-pf-1HE" id="KZd-A5-AvI"/>
+                        <outlet property="image" destination="1bc-zY-kMv" id="s9a-on-5eF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -312,7 +334,7 @@
                             <constraint firstItem="zPE-ih-33f" firstAttribute="width" secondItem="1cR-pa-3nZ" secondAttribute="width" id="tQ8-oW-Uu9"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" image="Shopping Cart-50" id="s7l-L5-9fF"/>
+                    <tabBarItem key="tabBarItem" image="Shopping Cart Loaded Filled-50" id="s7l-L5-9fF"/>
                     <connections>
                         <outlet property="WebViewWebshop" destination="zPE-ih-33f" id="BSp-XJ-CWl"/>
                     </connections>
@@ -360,12 +382,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AcknowledgeHeader" width="703" height="156"/>
-        <image name="Calendar 17 Filled-100" width="100" height="100"/>
-        <image name="Document Filled-100" width="100" height="100"/>
-        <image name="OverOns" width="1600" height="700"/>
-        <image name="Shopping Cart Loaded Filled-100" width="100" height="100"/>
-        <image name="Shopping Cart-50" width="50" height="50"/>
+        <image name="Acknowledge achtergrond" width="302" height="504"/>
+        <image name="Calendar-75" width="75" height="75"/>
+        <image name="Document Filled-50" width="50" height="50"/>
+        <image name="Document-75" width="75" height="75"/>
+        <image name="Shopping Cart Loaded Filled-50" width="50" height="50"/>
+        <image name="Shopping-75" width="75" height="75"/>
         <image name="Video Paylist-50" width="50" height="50"/>
     </resources>
 </document>

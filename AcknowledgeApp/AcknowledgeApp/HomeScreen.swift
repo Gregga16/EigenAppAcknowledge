@@ -11,6 +11,8 @@ import UIKit
 class HomeScreen: UIViewController {
 
     @IBOutlet weak var WebViewVideo: UIWebView!
+    @IBOutlet weak var image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
