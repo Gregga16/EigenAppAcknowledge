@@ -12,7 +12,7 @@ import EventKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var eV = [EKEvent]()
-    let datumTijdFormat = "dd MMMM yyyy HH:mm:ss"
+    let datumTijdFormat = "dd/MM/yyyy HH:mm"
     var start = [String]()
     var end = [String]()
     
@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 
                 let event:EKEvent = EKEvent(eventStore: eventStore)
                 
-                event.title = "Test Title"
+                event.title = "Open dag Acknowlege"
                 event.startDate = NSDate()
                 event.endDate = NSDate()
                 event.notes = "This is a note"
@@ -43,6 +43,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     print("bad things happened")
                 }
                 print("Saved Event")
+                
+                let alert = UIAlertController(title: "Evenement is aangemaakt:", message: event.title, preferredStyle: .Alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
             }
         })
         
@@ -90,7 +94,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         // What about Calendar entries?
         let startDate=NSDate().dateByAddingTimeInterval(-60*60*24)
-        let endDate=NSDate().dateByAddingTimeInterval(60*60*24*3)
+        let endDate=NSDate().dateByAddingTimeInterval(60*60*24*60)
         let predicate2 = eventStore.predicateForEventsWithStartDate(startDate, endDate: endDate, calendars: nil)
         
         print("startDate:\(startDate) endDate:\(endDate)")
@@ -119,6 +123,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        //return self.section [section]
+        return "Naam - Starttijd - Eindtijd"
+        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

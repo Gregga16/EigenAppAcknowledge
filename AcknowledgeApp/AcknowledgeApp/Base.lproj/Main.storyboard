@@ -40,11 +40,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Py4-AJ-Zsu" userLabel="Presentatie">
-                                <rect key="frame" x="20" y="500" width="80" height="50"/>
+                                <rect key="frame" x="16" y="500" width="80" height="50"/>
                                 <state key="normal" image="Document-75">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <state key="highlighted" image="Document Filled-50"/>
                                 <connections>
                                     <segue destination="ozi-O0-vL6" kind="push" id="8Rj-Jz-P93"/>
                                 </connections>
@@ -54,7 +53,7 @@
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Presentaties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tB-eb-FMx">
-                                <rect key="frame" x="20" y="555" width="95" height="21"/>
+                                <rect key="frame" x="16" y="555" width="95" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -84,7 +83,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liz-PJ-hrf">
-                                <rect key="frame" x="9" y="364" width="302" height="99"/>
+                                <rect key="frame" x="5" y="364" width="302" height="99"/>
                                 <string key="text">Het is belangrijk om duidelijk in het vizier te hebben wat je als organisatie wilt bereiken. Wat is jouw stip op de horizon? En hoe draagt ICT bij om dit doel sneller te bereiken? 
 
 Het is onze passie om organisaties doeltreffender te maken. We doen dit door inzet van de juiste innovaties, het inrichten van de juiste processen voor een optimale klantbeleving en het inzetten van doeltreffende ICT dienstverlening als fundering voor een groeiende organisatie.</string>
@@ -134,7 +133,7 @@ Het is onze passie om organisaties doeltreffender te maken. We doen dit door inz
             </objects>
             <point key="canvasLocation" x="420" y="-446"/>
         </scene>
-        <!--View Controller-->
+        <!--Evenementen-->
         <scene sceneID="gn9-fE-W8x">
             <objects>
                 <viewController id="AKF-rq-VKH" customClass="ViewController" customModule="AcknowledgeApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -146,40 +145,33 @@ Het is onze passie om organisaties doeltreffender te maken. We doen dit door inz
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1el-zS-gSo">
-                                <rect key="frame" x="121" y="96" width="78" height="30"/>
-                                <state key="normal" title="Kalender"/>
-                                <connections>
-                                    <action selector="buttonCalendar:" destination="AKF-rq-VKH" eventType="touchUpInside" id="IMn-Cx-Nlp"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PD6-nA-6ml">
-                                <rect key="frame" x="0.0" y="144" width="320" height="424"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PD6-nA-6ml">
+                                <rect key="frame" x="0.0" y="64" width="320" height="484"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kalenderCell" rowHeight="71" id="gr0-nk-712" customClass="KalendarCell" customModule="AcknowledgeApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="71"/>
+                                        <rect key="frame" x="0.0" y="92" width="320" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gr0-nk-712" id="jNQ-zP-zHm">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70a-bd-dgk">
-                                                    <rect key="frame" x="16" y="0.0" width="223" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <rect key="frame" x="16" y="0.0" width="289" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnI-Ai-HgL">
-                                                    <rect key="frame" x="16" y="24" width="223" height="21"/>
+                                                    <rect key="frame" x="16" y="24" width="296" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71J-Wb-gcD">
-                                                    <rect key="frame" x="16" y="49" width="223" height="21"/>
+                                                    <rect key="frame" x="16" y="49" width="296" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -198,8 +190,26 @@ Het is onze passie om organisaties doeltreffender te maken. We doen dit door inz
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PD6-nA-6ml" firstAttribute="height" secondItem="IL5-pa-EU6" secondAttribute="height" id="bGA-0I-l6T"/>
+                            <constraint firstItem="PD6-nA-6ml" firstAttribute="centerX" secondItem="IL5-pa-EU6" secondAttribute="centerX" id="cLy-eU-6Ak"/>
+                            <constraint firstItem="PD6-nA-6ml" firstAttribute="width" secondItem="IL5-pa-EU6" secondAttribute="width" id="ckz-cZ-w5b"/>
+                            <constraint firstItem="PD6-nA-6ml" firstAttribute="centerY" secondItem="IL5-pa-EU6" secondAttribute="centerY" id="ocG-nf-Ga4"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="B70-uz-VDv"/>
+                    <navigationItem key="navigationItem" title="Evenementen" id="B70-uz-VDv">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="mFM-3H-fMG">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1el-zS-gSo">
+                                <rect key="frame" x="163" y="7" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Maak evenement"/>
+                                <connections>
+                                    <action selector="buttonCalendar:" destination="AKF-rq-VKH" eventType="touchUpInside" id="IMn-Cx-Nlp"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="PD6-nA-6ml" id="9ky-hR-S3L"/>
                     </connections>
@@ -384,7 +394,6 @@ Het is onze passie om organisaties doeltreffender te maken. We doen dit door inz
     <resources>
         <image name="Acknowledge achtergrond" width="302" height="504"/>
         <image name="Calendar-75" width="75" height="75"/>
-        <image name="Document Filled-50" width="50" height="50"/>
         <image name="Document-75" width="75" height="75"/>
         <image name="Shopping Cart Loaded Filled-50" width="50" height="50"/>
         <image name="Shopping-75" width="75" height="75"/>
